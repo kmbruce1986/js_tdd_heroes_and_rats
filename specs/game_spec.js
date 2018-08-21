@@ -37,7 +37,10 @@ describe("Hero", function(){
     beforeEach(function(){
       task = new Task(5, 3, "Coin", true)
     });
-    it("should have a difficulty level");
+    it("should have a difficulty level", function(){
+      const actual = task.difficulty;
+      assert.deepStrictEqual(actual, 5)
+    });
     xit("should have an urgency level");
     xit("should have a reward");
     xit("should be able to be marked as completed");
