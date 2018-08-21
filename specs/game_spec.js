@@ -65,6 +65,9 @@ describe("Hero", function(){
       const actual = food.foodName;
       assert.deepStrictEqual(actual, "Ice Cream");
     });
-    xit("should have a replenishment value");
+    it("should have a replenishment value", function(){
+      const actual = food.replishmentValue;
+      assert.deepStrictEqual(actual, 10);
+    });
   });
 });
