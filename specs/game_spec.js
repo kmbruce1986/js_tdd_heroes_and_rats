@@ -45,7 +45,10 @@ describe("Hero", function(){
       const actual = task.urgency;
       assert.deepStrictEqual(actual, 3);
     });
-    xit("should have a reward");
+    xit("should have a reward", function(){
+      const actual = task.reward;
+      assert.deepStrictEqual(actual, "Coin");
+    });
     xit("should be able to be marked as completed");
   })
 });
