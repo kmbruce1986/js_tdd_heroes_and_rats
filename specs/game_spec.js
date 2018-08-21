@@ -34,7 +34,12 @@ describe("Hero", function(){
     const actual = hero.tasks;
     assert.deepStrictEqual(actual, []);
   });
-  xit("should be able to eat food");
+  it("should be able to eat food", function(){
+    let food = new Food("Ice Cream", 10)
+    hero.eatFood(food);
+    const actual = hero.health;
+    assert.deepStrictEqual(actual, 20)
+  });
   xit("check if favourite food");
   xit("sort tasks by difficulty, urgency or reward");
   xit("view if tasks are complete or incomplete");
