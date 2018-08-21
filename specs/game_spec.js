@@ -46,7 +46,15 @@ describe("Hero", function(){
     const actual = hero.health;
     assert.deepStrictEqual(actual, 40)
   });
-  xit("sort tasks by difficulty, urgency or reward");
+  it("sort tasks by difficulty", function(){
+    let task1 = new Task(10, 5, "Star", true)
+    let task2 = new Task(6, 1, "Coin", false)
+    let task3 = new Task(3, 8, "Life", true)
+    const actual = hero.sortTasksByDifficulty(task);
+    assert.deepStrictEqual(actual, [task1, task2, task3])
+  });
+  xit("sort tasks by urgency");
+  xit("sort tasks by reward");
   xit("view if tasks are complete or incomplete");
 
   describe("Task", function(){
