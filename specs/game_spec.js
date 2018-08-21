@@ -40,7 +40,12 @@ describe("Hero", function(){
     const actual = hero.health;
     assert.deepStrictEqual(actual, 20)
   });
-  xit("check if favourite food");
+  it("check if favourite food", function(){
+    let food = new Food("Pizza", 20)
+    hero.eatFood(food);
+    const actual = hero.health;
+    assert.deepStrictEqual(actual, 40)
+  });
   xit("sort tasks by difficulty, urgency or reward");
   xit("view if tasks are complete or incomplete");
 
@@ -75,7 +80,7 @@ describe("Hero", function(){
       assert.deepStrictEqual(actual, "Ice Cream");
     });
     it("should have a replenishment value", function(){
-      const actual = food.replishmentValue;
+      const actual = food.replenishmentValue;
       assert.deepStrictEqual(actual, 10);
     });
   });

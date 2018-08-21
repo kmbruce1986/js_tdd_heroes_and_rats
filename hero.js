@@ -7,7 +7,13 @@ const Hero = function(name, health, food, phrase){
 };
 
 Hero.prototype.eatFood = function(food){
-  this.health += food.replishmentValue
+  if (food.foodName === this.food) {
+    extraValue = 1.5 * food.replenishmentValue;
+    this.health += extraValue
+  }
+  else {
+    this.health += food.replenishmentValue
+  }
 };
 
 
