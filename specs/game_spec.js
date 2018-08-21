@@ -49,6 +49,9 @@ describe("Hero", function(){
       const actual = task.reward;
       assert.deepStrictEqual(actual, "Coin");
     });
-    xit("should be able to be marked as completed");
+    it("should be able to be marked as completed", function(){
+      const actual = task.completion;
+      assert.deepStrictEqual(actual, true);
+    });
   })
 });
