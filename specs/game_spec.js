@@ -61,7 +61,10 @@ describe("Hero", function(){
     beforeEach(function(){
       food = new Food("Ice Cream", 10)
     });
-    it("should have a name");
+    it("should have a name", function(){
+      const actual = food.foodName;
+      assert.deepStrictEqual(actual, "Ice Cream");
+    });
     xit("should have a replenishment value");
   });
 });
