@@ -3,6 +3,7 @@ const Hero = require("../hero.js")
 const Task = require("../task.js")
 
 let hero;
+let task;
 
 describe("Hero", function(){
   beforeEach(function(){
@@ -30,5 +31,15 @@ describe("Hero", function(){
   it("should have a collection of tasks", function(){
     const actual = hero.tasks;
     assert.deepStrictEqual(actual, [])
+  })
+
+  describe("Task", function(){
+    beforeEach(function(){
+      task = new Task(5, 3, "Coin", true)
+    });
+    it("should have a difficulty level");
+    xit("should have an urgency level");
+    xit("should have a reward");
+    xit("should be able to be marked as completed");
   })
 });
