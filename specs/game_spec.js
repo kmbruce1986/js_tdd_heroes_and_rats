@@ -30,7 +30,7 @@ describe("Hero", function(){
   });
   it("should have a collection of tasks", function(){
     const actual = hero.tasks;
-    assert.deepStrictEqual(actual, [])
+    assert.deepStrictEqual(actual, []);
   })
 
   describe("Task", function(){
@@ -39,9 +39,12 @@ describe("Hero", function(){
     });
     it("should have a difficulty level", function(){
       const actual = task.difficulty;
-      assert.deepStrictEqual(actual, 5)
+      assert.deepStrictEqual(actual, 5);
     });
-    xit("should have an urgency level");
+    it("should have an urgency level", function(){
+      const actual = task.urgency;
+      assert.deepStrictEqual(actual, 3);
+    });
     xit("should have a reward");
     xit("should be able to be marked as completed");
   })
