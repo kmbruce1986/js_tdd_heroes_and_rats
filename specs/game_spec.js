@@ -33,7 +33,11 @@ describe("Hero", function(){
   it("should have a collection of tasks", function(){
     const actual = hero.tasks;
     assert.deepStrictEqual(actual, []);
-  })
+  });
+  xit("should be able to eat food");
+  xit("check if favourite food");
+  xit("sort tasks by difficulty, urgency or reward");
+  xit("view if tasks are complete or incomplete");
 
   describe("Task", function(){
     beforeEach(function(){
