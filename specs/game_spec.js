@@ -50,10 +50,10 @@ describe("Hero", function(){
     const actual = hero.countNumberOfTasks();
     assert.strictEqual(actual, 0)
   })
-  xit("add task to list of tasks", function(){
+  it("add task to list of tasks", function(){
     let task1 = new Task(10, 5, "Star", true)
     hero.addTask(task1)
-    const actual = hero.countNumberOfTasks;
+    const actual = hero.countNumberOfTasks();
     assert.deepStrictEqual(actual, 1)
   });
   xit("sort tasks by difficulty", function(){
