@@ -5,6 +5,7 @@ const Food = require("../food.js")
 
 let hero;
 let task;
+let food;
 
 describe("Hero", function(){
   beforeEach(function(){
@@ -55,4 +56,12 @@ describe("Hero", function(){
       assert.deepStrictEqual(actual, true);
     });
   })
+
+  describe("Food", function(){
+    beforeEach(function(){
+      food = new Food("Ice Cream", 10)
+    });
+    it("should have a name");
+    xit("should have a replenishment value");
+  });
 });
