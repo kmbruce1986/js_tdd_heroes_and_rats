@@ -26,5 +26,8 @@ describe("Hero", function(){
     const actual = hero.phrase;
     assert.deepStrictEqual(actual, "It's a-me, Mario!");
   });
-  xit("should have a collection of tasks")
-})
+  it("should have a collection of tasks", function(){
+    const actual = hero.tasks;
+    assert.deepStrictEqual(actual, [])
+  })
+});
