@@ -46,7 +46,17 @@ describe("Hero", function(){
     const actual = hero.health;
     assert.deepStrictEqual(actual, 40)
   });
-  it("sort tasks by difficulty", function(){
+  it("count number of tasks", function(){
+    const actual = hero.countNumberOfTasks();
+    assert.strictEqual(actual, 0)
+  })
+  xit("add task to list of tasks", function(){
+    let task1 = new Task(10, 5, "Star", true)
+    hero.addTask(task1)
+    const actual = hero.countNumberOfTasks;
+    assert.deepStrictEqual(actual, 1)
+  });
+  xit("sort tasks by difficulty", function(){
     let task1 = new Task(10, 5, "Star", true)
     let task2 = new Task(6, 1, "Coin", false)
     let task3 = new Task(3, 8, "Life", true)

@@ -16,5 +16,17 @@ Hero.prototype.eatFood = function(food){
   }
 };
 
+Hero.prototype.countNumberOfTasks = function(){
+  return this.tasks.length
+};
+// 
+// Hero.prototype.addTask = function(task){
+//   this.tasks.push(task)
+// };
+//
+// Hero.prototype.sortTasksByDifficulty = function(task){
+//   array_of_tasks = this.tasks.sort();
+//   return array_of_tasks
+// }
 
 module.exports = Hero;
