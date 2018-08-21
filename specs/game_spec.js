@@ -1,5 +1,6 @@
 const assert = require("assert");
 const Hero = require("../hero.js")
+const Task = require("../task.js")
 
 let hero;
 
