@@ -21,6 +21,10 @@ describe("Hero", function(){
     const actual = hero.food;
     assert.deepStrictEqual(actual, "Pizza");
   });
-  xit("should have a phrase")
+
+  it("should have a phrase", function(){
+    const actual = hero.phrase;
+    assert.deepStrictEqual(actual, "It's a-me, Mario!");
+  });
   xit("should have a collection of tasks")
 })
