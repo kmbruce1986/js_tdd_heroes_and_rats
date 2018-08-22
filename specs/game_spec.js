@@ -60,11 +60,23 @@ describe("Hero", function(){
     let task1 = new Task(10, 5, "Star", true)
     let task2 = new Task(6, 1, "Coin", false)
     let task3 = new Task(3, 8, "Life", true)
-    const actual = hero.sortTasksByDifficulty(task);
+    hero.addTask(task1);
+    hero.addTask(task2);
+    hero.addTask(task3);
+    const actual = hero.sortTasksByDifficulty();
     assert.deepStrictEqual(actual, [task1, task2, task3])
   });
   xit("sort tasks by urgency");
-  xit("sort tasks by reward");
+  it("sort tasks by reward", function(){
+    let task1 = new Task(10, 5, "Star", true)
+    let task2 = new Task(6, 1, "Coin", false)
+    let task3 = new Task(3, 8, "Life", true)
+    hero.addTask(task1);
+    hero.addTask(task2);
+    hero.addTask(task3);
+    const actual = hero.sortTasksByReward();
+    assert.deepStrictEqual(actual, [task2, task3, task1])
+  });
   xit("view if tasks are complete or incomplete");
 
   describe("Task", function(){

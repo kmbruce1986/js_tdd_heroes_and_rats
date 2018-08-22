@@ -24,9 +24,14 @@ Hero.prototype.addTask = function(task){
   this.tasks.push(task);
 };
 
-// Hero.prototype.sortTasksByDifficulty = function(task){
-//   array_of_tasks = this.tasks.sort();
-//   return array_of_tasks
-// }
+
+Hero.prototype.sortTasksByReward = function(){
+  function sortfunction(a, b){
+    return (a - b);
+  };
+  return this.tasks.sort(sortfunction);
+
+
+}
 
 module.exports = Hero;
